@@ -31,13 +31,16 @@ def agedataprint(data):
  print("AVG age is :- ",sum(data)/len(data))
 for k,i in enumerate(student):
  age.append(int(student[k][3]))
+ 
 print("---------All The students----------")
 agedataprint(age)
+
 city=str(input("Enter the City Name :-"))
 age = []
 for k,i in enumerate(student):
  if (student[k][2] == city):
      age.append(int(student[k][3]))
+     
 print("---------City wise students Age Data----------")
 agedataprint(age)
 name = []
@@ -45,12 +48,17 @@ for k,i in enumerate(student):
  if (student[k][1].startswith('A')):
      name.append(int(student[k][3]))
 
+
 print("---------Name wise strating A students Age Data----------")
 agedataprint(name)
+
+
 n=int(input("Enter the Roll No :-"))
 age = []
 for k,i in enumerate(student):
  if (int(student[k][0]) > n):
      age.append(int(student[k][3]))
+
+     
 print("---------RollNo wise students Age Data----------")
 agedataprint(age)
